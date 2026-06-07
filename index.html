@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Trinh Tran | Portfolio</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+
+<style>
+:root{
+--bg:#f7f6f2;
+--text:#111;
+--muted:#666;
+--line:#ddd;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+font-family:"Roboto",sans-serif;
+background:#ffffff;
+color:var(--text);
+line-height:1.8;
+}
+.container{width:min(1200px,90%);margin:auto}
+h1,h2,h3{font-family:"Cormorant Garamond",serif;font-weight:600}
+nav{
+position:fixed;top:0;left:0;width:100%;
+background:rgba(247,246,242,.95);
+backdrop-filter:blur(10px);
+border-bottom:1px solid #e5e5e5;
+z-index:1000;
+}
+.nav-inner{
+width:min(1200px,90%);
+margin:auto;
+display:flex;
+justify-content:space-between;
+padding:18px 0;
+}
+.nav-links{display:flex;gap:30px}
+.nav-links a{
+text-decoration:none;color:#111;
+font-size:.85rem;
+letter-spacing:.15em;
+text-transform:uppercase;
+}
+section{padding:120px 0}
+.hero{
+min-height:100vh;
+display:grid;
+grid-template-columns:2fr 1fr;
+align-items:center;
+gap:80px;
+}
+.hero-name{
+font-size:clamp(5rem,12vw,11rem);
+line-height:.82;
+letter-spacing:-.06em;
+}
+.traits{
+margin-top:30px;
+display:flex;
+flex-wrap:wrap;
+gap:20px;
+text-transform:uppercase;
+letter-spacing:.15em;
+font-size:.9rem;
+color:var(--muted);
+}
+.hero-quote{
+font-family:"Cormorant Garamond",serif;
+font-size:2.3rem;
+line-height:1.25;
+border-left:2px solid #111;
+padding-left:30px;
+}
+.section-label{
+font-size:.8rem;
+letter-spacing:.2em;
+text-transform:uppercase;
+color:var(--muted);
+margin-bottom:20px;
+}
+.manifesto{
+max-width:900px;
+font-size:1.4rem;
+}
+.section-title{
+font-size:4rem;
+margin-bottom:60px;
+}
+.questions-grid{
+display:grid;
+grid-template-columns:repeat(2,1fr);
+gap:50px;
+}
+.question{
+border-bottom:1px solid var(--line);
+padding-bottom:25px;
+}
+.question-number{
+font-size:.8rem;
+letter-spacing:.2em;
+color:var(--muted);
+margin-bottom:10px;
+}
+.question h3{
+font-size:2rem;
+margin-bottom:10px;
+}
+.project{
+padding-top:80px;
+margin-top:80px;
+border-top:1px solid var(--line);
+}
+.project-number{
+font-size:.8rem;
+letter-spacing:.2em;
+color:var(--muted);
+margin-bottom:20px;
+}
+.project-title{
+font-size:4rem;
+line-height:1;
+margin-bottom:30px;
+max-width:800px;
+}
+.flow{
+margin:35px 0;
+padding:20px 0;
+border-top:1px solid var(--line);
+border-bottom:1px solid var(--line);
+font-weight:500;
+}
+.featured-image img,
+.secondary-gallery img{
+width:100%;
+border:1px solid var(--line);
+}
+.secondary-gallery{
+display:grid;
+grid-template-columns:repeat(2,1fr);
+gap:25px;
+margin-top:25px;
+}
+.caption{
+font-size:.95rem;
+color:#555;
+margin-top:8px;
+}
+.skills{
+margin-top:35px;
+padding-top:20px;
+border-top:1px solid var(--line);
+color:#555;
+}
+footer{
+padding:80px 0;
+text-align:center;
+border-top:1px solid var(--line);
+color:#666;
+}
+@media(max-width:900px){
+.hero{grid-template-columns:1fr;padding-top:120px}
+.questions-grid{grid-template-columns:1fr}
+.secondary-gallery{grid-template-columns:1fr}
+.project-title,.section-title{font-size:2.8rem}
+}
+
+.project1-layout{
+display:grid;
+grid-template-columns:2fr 1fr;
+gap:24px;
+margin-top:30px;
+}
+.project1-main img,
+.project1-side img,
+.project2-grid img{
+width:100%;
+border:1px solid var(--line);
+}
+.project1-side{
+display:grid;
+grid-template-rows:1fr 1fr;
+gap:24px;
+}
+.project2-grid{
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:24px;
+margin-top:30px;
+}
+@media(max-width:900px){
+.project1-layout{grid-template-columns:1fr}
+.project2-grid{grid-template-columns:1fr}
+}
+
+</style>
+</head>
+<body>
+
+<nav>
+<div class="nav-inner">
+<div>TRINH TRAN</div>
+<div class="nav-links">
+<a href="#thinking">Thinking</a>
+<a href="#questions">Questions</a>
+<a href="#projects">Projects</a>
+<a href="#contact">Contact</a>
+</div>
+</div>
+</nav>
+
+<div class="container">
+
+<section class="hero">
+<div>
+<h1 class="hero-name">TRINH<br>TRAN</h1>
+<div class="traits">
+<span>Curiosity</span>
+<span>Perspective</span>
+<span>Structured Thinking</span>
+</div>
+</div>
+
+<div class="hero-quote">
+For me, analysis is not only about finding answers.<br><br>
+It is about asking better questions.
+</div>
+</section>
+
+<section id="thinking">
+<div class="section-label">How I Think</div>
+<div class="manifesto">
+<p>Every perspective reveals only part of a story.</p><br>
+<p>For me, analysis is not only about finding answers. It is about asking better questions, exploring alternative perspectives, and connecting information in ways that reveal new possibilities.</p><br>
+<p>Looking through a different lens often reveals assumptions, opportunities, and insights that might otherwise remain unseen.</p>
+</div>
+</section>
+
+<section id="questions">
+<h2 class="section-title">Questions I Make Every Day</h2>
+
+<div class="questions-grid">
+<div class="question">
+<div class="question-number">01</div>
+<h3>Alternative Perspectives</h3>
+<p>What changes when we look at the same situation from a different angle?</p>
+</div>
+
+<div class="question">
+<div class="question-number">02</div>
+<h3>Decision Making</h3>
+<p>Why was this choice made instead of another possibility?</p>
+</div>
+
+<div class="question">
+<div class="question-number">03</div>
+<h3>Information Value</h3>
+<p>What additional value can be created from information already available?</p>
+</div>
+
+<div class="question">
+<div class="question-number">04</div>
+<h3>Systems Thinking</h3>
+<p>What processes, assumptions, and structures drive the outcome?</p>
+</div>
+</div>
+</section>
+
+<section id="projects">
+<h2 class="section-title">Selected Projects</h2>
+
+<div class="project">
+<div class="project-number">PROJECT 01</div>
+<h2 class="project-title">From Content Monitoring<br>to Competitive Intelligence</h2>
+
+<p><strong>Question:</strong> What additional value could be created if competitor publications were analyzed not only as market information, but also as evidence of content strategy and thought leadership?</p>
+
+<div class="flow">
+Competitor Monitoring ↓ Content Classification ↓ Structured Database ↓ Content Intelligence Analysis ↓ Strategic Insights
+</div>
+
+<div class="project1-layout">
+<div class="project1-main">
+<img src="project1-3.png" alt="Project 1 Dashboard">
+<div class="caption"><strong>From Content to Intelligence</strong> — Power BI dashboard for competitive content analysis.</div>
+</div>
+<div class="project1-side">
+<div>
+<img src="project1-1.png" alt="Project 1 Database">
+<div class="caption"><strong>Building the Foundation</strong><br>SharePoint database used to classify competitor publications.</div>
+</div>
+<div>
+<img src="project1-2.png" alt="Project 1 Overview">
+<div class="caption"><strong>Turning Information into Visibility</strong><br>Monthly publication overview revealing patterns and trends.</div>
+</div>
+</div>
+</div>
+
+
+<div style="margin-top:30px">
+<p><strong>Impact:</strong></p>
+<p>
+By looking at competitor publications through a different lens, I transformed an existing information source into a new intelligence asset. What began as a personal initiative was later incorporated into quarterly reporting for Group Marketing & Communication, helping stakeholders track competitor content strategies, thought leadership focus, and market positioning over time.
+</p>
+
+<p style="margin-top:15px">
+The work was recognized by Pavel Gomez del Castillo (Head of Content) and presented to Dirk Hagener (Director of Group Marketing & Communication).
+</p>
+</div>
+
+
+<div class="skills">
+Power BI · Power Query · Excel · SharePoint Lists · Competitive Intelligence
+</div>
+</div>
+
+<div class="project">
+<div class="project-number">PROJECT 02</div>
+<h2 class="project-title">From Workflow<br>to Data Model</h2>
+
+<p>A self-initiated project translating business workflows into a structured analytical model.</p>
+
+<p><strong>Question:</strong> How can complex business workflows be translated into a data model that enables meaningful analysis, supports decision-making, and delivers valuable insights for stakeholders?</p>
+
+<div class="flow">
+Business Workflow ↓ Entity Identification ↓ Star Schema Design ↓ Data Transformation ↓ Dashboard Development ↓ Business Analysis
+</div>
+
+<div class="project2-grid">
+<div>
+<img src="project2-1.png" alt="Project 2 Overview">
+<div class="caption"><strong>From Workflow to Structure</strong> — Overview dashboard built on a custom-designed dataset.</div>
+</div>
+<div>
+<img src="project2-2.png" alt="PPC Analysis">
+<div class="caption"><strong>Measuring Channel Performance</strong></div>
+</div>
+<div>
+<img src="project2-3.png" alt="Lead Quality">
+<div class="caption"><strong>Understanding Lead Quality</strong></div>
+</div>
+</div>
+
+<div class="skills">
+Power BI · Data Modeling · Star Schema Design · Business Intelligence · Dashboard Design
+</div>
+</div>
+</section>
+
+<section>
+<h2 class="section-title">Currently Exploring</h2>
+<p>Automation, APIs, market intelligence workflows, data architecture, and decision-making processes.</p>
+</section>
+
+<section id="contact">
+<h2 class="section-title">Contact</h2>
+<p style="font-size:1.2rem;">kieutrinhdn99@gmail.com</p>
+</section>
+
+<footer>
+Designed and written by Trinh Tran
+</footer>
+
+</div>
+</body>
+</html>
