@@ -196,6 +196,41 @@ margin-top:30px;
 .project1-layout{grid-template-columns:1fr}
 .project2-grid{grid-template-columns:1fr}
 }
+
+/* STAR layout */
+.star{
+margin-top:50px;
+border-top:1px solid var(--line);
+}
+.star-row{
+display:grid;
+grid-template-columns:200px 1fr;
+gap:40px;
+padding:28px 0;
+border-bottom:1px solid var(--line);
+}
+.star-label{
+font-family:"Cormorant Garamond",serif;
+font-size:1.8rem;
+font-weight:600;
+line-height:1.2;
+}
+.star-label span{
+display:block;
+font-family:"Roboto",sans-serif;
+font-size:.75rem;
+letter-spacing:.2em;
+text-transform:uppercase;
+color:var(--muted);
+font-weight:400;
+margin-bottom:4px;
+}
+.star-body ul{padding-left:20px}
+.star-body li{margin-bottom:6px}
+.star-body p+p,.star-body p+ul,.star-body ul+p{margin-top:12px}
+@media(max-width:900px){
+.star-row{grid-template-columns:1fr;gap:10px}
+}
 </style>
 </head>
 
@@ -282,33 +317,48 @@ It is about asking better questions.
 Competitor Monitoring ↓ Content Classification ↓ Structured Database ↓ Content Intelligence Analysis ↓ Strategic Insights
 </div>
 
-<div class="project1-layout">
-<div class="project1-main">
-<img src="project1-3.png" alt="Project 1 Dashboard">
-<div class="caption"><strong>From Content to Intelligence</strong> — Power BI dashboard for competitive content analysis.</div>
-</div>
+<div class="star">
 
-<div class="project1-side">
-<div>
-<img src="project1-1.png" alt="Project 1 Database">
-<div class="caption"><strong>Building the Foundation</strong><br>SharePoint database used to classify competitor publications.</div>
-</div>
-
-<div>
-<img src="project1-2.png" alt="Project 1 Overview">
-<div class="caption"><strong>Turning Information into Visibility</strong><br>Monthly publication overview revealing patterns and trends.</div>
-</div>
+<div class="star-row">
+<div class="star-label"><span>S</span>Situation</div>
+<div class="star-body">
+<p>My team, Market Intelligence, monitors competitor websites and maintains a market intelligence database. While following the content team's discussions in Group Marketing &amp; Communication meetings, I noticed a gap: the team's knowledge of what competitors publish on their websites, and how, was limited and scattered.</p>
 </div>
 </div>
 
-<div style="margin-top:30px">
-<p><strong>Impact:</strong></p>
-<p>
-By looking at competitor publications through a different lens, I transformed an existing information source into a new intelligence asset. What began as a personal initiative was later incorporated into quarterly reporting for Group Marketing & Communication, helping stakeholders track competitor content strategies, thought leadership focus, and market positioning over time.
-</p>
-<p style="margin-top:15px">
-The work was recognized by Pavel Gomez del Castillo (Head of Content) and presented to Dirk Hagener (Director of Group Marketing & Communication).
-</p>
+<div class="star-row">
+<div class="star-label"><span>T</span>Task</div>
+<div class="star-body">
+<p>This was a self-initiated project, beyond my role, as I work in Market Intelligence and not in the content team. My goals were to give the content team a consistent view of competitor publishing strategies, to contribute to the performance of Group Marketing &amp; Communication, and to deepen my knowledge of content marketing and my data analysis skills.</p>
+</div>
+</div>
+
+<div class="star-row">
+<div class="star-label"><span>A</span>Action</div>
+<div class="star-body">
+<ul>
+<li>Built a database as a calendar view in SharePoint Lists, so the team can see weekly what competitors publish at a glance.</li>
+<li>Worked with content team members to apply our company's content taxonomy to competitor articles, so every competitor is analyzed through the same lens.</li>
+<li>Extended the taxonomy with additional layers covering content format, packaging and editorial style, not only topics.</li>
+<li>Solved the hardest part, classifying articles that fit no single category, by adding an extra field with defined levels so outliers are handled in a structured way. For example, evergreen (educational, thought-leadership) content sometimes embeds a small promotional part, so I added a commercial intensity level, from low to medium, for evergreen content.</li>
+<li>Used Power Query and Power BI to build a dashboard tracking publishing cadence, trends, editorial styles and heatmaps of the most popular content, with historical trends available on demand.</li>
+<li>Updated the database weekly, improved the dashboard continuously and compiled a quarterly report.</li>
+</ul>
+</div>
+</div>
+
+<div class="star-row">
+<div class="star-label"><span>R</span>Result</div>
+<div class="star-body">
+<ul>
+<li>A database of around 350 articles from the 3 biggest players in the market (Sep 2025 to Sep 2026), a dashboard with 9 visualizations and a detailed taxonomy of categories and sub-categories.</li>
+<li>After I introduced the project and the report, Group Marketing &amp; Communication welcomed it and it became part of the quarterly reporting.</li>
+<li>The content team uses the report as a reference for content production decisions and as a benchmark against the industry.</li>
+<li>It saves the team from repeating the same research, and gives them historical data to look back on and a visual way to reflect on their own performance over time.</li>
+</ul>
+</div>
+</div>
+
 </div>
 
 <div class="skills">
@@ -343,6 +393,48 @@ Business Workflow ↓ Entity Identification ↓ Star Schema Design ↓ Data Tran
 <img src="project2-3.png" alt="Lead Quality">
 <div class="caption"><strong>Measuring Channel Performance</strong></div>
 </div>
+</div>
+
+<div class="star">
+
+<div class="star-row">
+<div class="star-label"><span>S</span>Situation</div>
+<div class="star-body">
+<p>During a work project on telemarketing and marketing ROI, I interviewed marketing teams from units around the world. I found that some teams lacked tracking and measurement of their lead generation campaigns, and that there was no group-level overview of how leads are generated, nurtured and converted into business value. Data was managed locally and reported to the group separately, in different formats and with different KPIs.</p>
+</div>
+</div>
+
+<div class="star-row">
+<div class="star-label"><span>T</span>Task</div>
+<div class="star-body">
+<p>I set out to design a syndicated database that lets the group monitor the lead generation campaigns of its local units, with a dashboard available to the whole organisation to follow each unit.</p>
+<p>The dataset is fictional and created by me. It shows the ideal situation in which such data is available, and it let me demonstrate my data skills and show what information I would ask for to run root-cause analysis and what insights I could provide.</p>
+</div>
+</div>
+
+<div class="star-row">
+<div class="star-label"><span>A</span>Action</div>
+<div class="star-body">
+<ul>
+<li>Used what I learned from my work projects about the information marketing teams hold to decide what the model needed to capture.</li>
+<li>Used AI to help design a star schema for B2B lead generation campaign performance. The fact is the campaign, and the dimensions describe it, for example campaign type and audience or segmentation.</li>
+<li>Chose a star schema for scalability. When leads grow into the millions, campaigns become more complex and personas more nuanced, new dimensions can be added to capture more features and trends in the data.</li>
+<li>Used Power Query to prepare the data and Power BI to analyse it and build the dashboard.</li>
+</ul>
+</div>
+</div>
+
+<div class="star-row">
+<div class="star-label"><span>R</span>Result</div>
+<div class="star-body">
+<ul>
+<li>The dashboard gives marketing managers an overview of how efficient each campaign type is in a given market.</li>
+<li>It shows which persona, segmentation and campaign type work best in which market.</li>
+</ul>
+<p><strong>Next step:</strong> I plan to add lead lifecycle data from the CRM, so the model can also show how well sales and marketing collaborate and how much effort marketing puts into qualifying, nurturing, scoring and assigning leads to sales.</p>
+</div>
+</div>
+
 </div>
 
 <div class="skills">
@@ -390,18 +482,50 @@ Audience Research ↓ Behaviour & Needs ↓ Content Strategy ↓ Campaign Execut
 </div>
 </div>
 
-<div style="margin-top:30px">
-<p><strong>Approach:</strong></p>
-<p>
-Conducted audience research through interviews and online behaviour observation to identify needs, motivations and decision journeys, then translated those insights into content themes, formats and communication approaches.
-</p>
-<p style="margin-top:15px">
-Analysed campaign feedback and engagement patterns to identify improvement opportunities and adapt communication approaches, contributing to a 150–200% increase in social media engagement during my tenure.
-</p>
+<div class="star">
+
+<div class="star-row">
+<div class="star-label"><span>S</span>Situation</div>
+<div class="star-body">
+<p>I worked full time at a faculty, where I led a team of around 30 volunteer students. The faculty wanted to connect with its target audience, high school students and undergraduates, and to reach the highest enrollment rate of the academic year.</p>
+</div>
+</div>
+
+<div class="star-row">
+<div class="star-label"><span>T</span>Task</div>
+<div class="star-body">
+<p>I was responsible for planning and budgeting the faculty's communication campaigns and for leading the volunteer team that carried them out, so that the faculty would build its reputation and stay connected with prospective students. I also stepped in on operational work, such as designing posters, writing video plots and handling event logistics.</p>
+</div>
+</div>
+
+<div class="star-row">
+<div class="star-label"><span>A</span>Action</div>
+<div class="star-body">
+<ul>
+<li>Conducted audience research through interviews and online behaviour observation to identify needs, motivations and decision journeys.</li>
+<li>Translated those insights into content themes, formats and communication approaches, from student and alumni stories to events, contests and video.</li>
+<li>Analysed campaign feedback and engagement patterns to find improvement opportunities and adapt the approach.</li>
+<li>Led the volunteer team through the hardest challenge: students' commitment was not stable, and some did not see why they were volunteering. I talked with each of them to understand their needs and direction, and explained clearly the team's goal and mission, with the pros and cons, so they could make an informed choice and commit more seriously.</li>
+<li>Built a structured communication team that could be passed on to the next generations of volunteers, together with a culture of responsibility, positive support and enthusiasm.</li>
+</ul>
+</div>
+</div>
+
+<div class="star-row">
+<div class="star-label"><span>R</span>Result</div>
+<div class="star-body">
+<ul>
+<li>Engagement on the faculty's Facebook page (comments, likes and shares) grew by 150%, and the faculty launched its TikTok account the same year.</li>
+<li>Together with the team, I organised at least 20 successful events at the faculty, hundreds of Facebook posts and around 50 TikTok videos.</li>
+<li>The faculty's reputation was built through these campaigns, and the communication team I structured and the culture around it continue with each new generation of volunteers.</li>
+</ul>
+</div>
+</div>
+
 </div>
 
 <div class="skills">
-Audience Research · Consumer Behaviour · Content Strategy · Social Media Communication · Campaign Development
+Audience Research · Consumer Behaviour · Content Strategy · Social Media Communication · Campaign Development · Team Leadership
 </div>
 </div>
 
